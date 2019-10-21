@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Activities.Comfirm">
+
+
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#6200ee"
+        android:padding="10dp"
+        android:text="Please Insert Your Comfirm Code"/>
+
+
+
+    <EditText
+        android:id="@+id/editComfirm"
+        android:inputType="numberPassword"
+        android:background="@drawable/custom_edittext_form_background"
+        style="@style/Foredit" />
+
+
+    <Button
+        android:id="@+id/btnComfirm"
+        android:background="@drawable/button_login_back"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Comfirm"/>
+</LinearLayout>

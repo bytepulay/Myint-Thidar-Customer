@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="56dp"
+    tools:context=".Fragments.CustomerSettingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--<include layout="@layout/toolbar_layout"/>-->
+<!---->
+    <androidx.core.widget.NestedScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/customerProfile"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="2dp"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#FF000000"/>
+
+        <EditText
+            android:inputType="numberPassword"
+            style="@style/Foredit"
+            android:hint="Enter Comfirm Code"
+            android:id="@+id/changeCode"
+            android:background="@drawable/custom_edittext_form_background"/>
+
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:shadowColor="#000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnChangeCode"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_login_back"
+            android:text="Change Comfirm Code"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            />
+
+
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:shadowColor="#000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnCustomerPasswordSave"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login_back"
+        android:text="Change Profile"
+        android:textSize="20sp"
+        android:textColor="#fff"
+       />
+
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="15dp"
+            android:shadowColor="#000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnCustomerLogout"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_login_back"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+      <LinearLayout
+          android:id="@+id/linearNotiOne"
+          android:weightSum="10"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+
+          <TextView
+              android:textColor="#5f5f5f"
+              android:layout_weight="5"
+              android:id="@+id/title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:text="title"/>
+
+        <TextView
+         android:textColor="#5f5f5f"
+         android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_margin="10dp"
+        android:id="@+id/oneDate"/>
+
+
+
+
+      </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Myint Thidar Customer</string>
+
+    <string name="pref_file">asia.nainglintun.myintthitar.preference_file</string>
+    <string name="pref_login_status">asia.nainglintun.myintthitar.preference_login_status</string>
+
+    <string name="pref_user_name">asia.nainglintun.myintthitar.preference_user_name</string>
+
+
+    <string name="pref_row_user">asia.nainglintun.myintthitar.preference_row_user</string>
+
+    <string name="title_rank">Home</string>
+    <string name="title_history">History</string>
+    <string name="title_order">Order</string>
+    <string name="title_notification">Notifications</string>
+    <string name="title_setting">Settings</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_customer_two">CustomerActivityTwo</string>
+</resources>

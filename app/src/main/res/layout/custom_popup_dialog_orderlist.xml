@@ -1,0 +1,1810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/closeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"/>
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#FFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:weightSum="15"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#6200ee"
+                    android:padding="10dp"
+                    android:text="Order Voucher Detail"/>
+
+
+                    <!--<ImageButton-->
+                        <!--android:src="@drawable/ic_save_black_24dp"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_weight="2"-->
+                        <!--android:id="@+id/btnVoucherSave"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Edit"/>-->
+
+
+
+<!--                    <ImageButton-->
+<!--                        android:src="@drawable/ic_mode_edit_black_24dp"-->
+<!--                        android:layout_marginRight="20dp"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:id="@+id/btnVoucherEdit"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Edit"/>-->
+
+
+                </LinearLayout>
+
+               <!--<android.support.v7.widget.RecyclerView-->
+                   <!--android:visibility="visible"-->
+                   <!--android:id="@+id/recyclerViewDialog"-->
+                   <!--android:layout_width="match_parent"-->
+                   <!--android:layout_height="wrap_content">-->
+
+               <!--</android.support.v7.widget.RecyclerView>-->
+
+<!--                <TextView-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Voucher No"/>-->
+
+<!--                <EditText-->
+<!--                    android:enabled="false"-->
+<!--                   style="@style/Forview"-->
+<!--                    android:id="@+id/viewVoucher"-->
+<!--                    android:background="@drawable/custom_edittext_form_background"-->
+<!--                     />-->
+
+<!--                <TextView-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Date"/>-->
+
+<!--                <EditText-->
+<!--                    android:enabled="false"-->
+<!--                   style="@style/Forview"-->
+<!--                    android:id="@+id/viewDate"-->
+<!--                    android:background="@drawable/custom_edittext_form_background"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Gram"/>-->
+
+<!--                <EditText-->
+<!--                    android:enabled="false"-->
+<!--                   style="@style/Forview"-->
+<!--                    android:id="@+id/viewGram"-->
+<!--                    android:background="@drawable/custom_edittext_form_background"-->
+<!--                    />-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:weightSum="15"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="က်ပ္"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="ပဲ"/>-->
+
+<!--                    <TextView-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="ေရြး"/>-->
+
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:weightSum="15"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <EditText-->
+<!--                        android:enabled="false"-->
+<!--                        android:id="@+id/gramtoKyat"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:gravity="center"-->
+<!--                       style="@style/Forview"-->
+<!--                        android:background="@drawable/custom_edittext_form_background"-->
+<!--                        />-->
+
+<!--                    <EditText-->
+<!--                        android:enabled="false"-->
+<!--                        android:id="@+id/gramtPal"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:gravity="center"-->
+<!--                       style="@style/Forview"-->
+<!--                        android:background="@drawable/custom_edittext_form_background"-->
+<!--                        />-->
+
+<!--                    <EditText-->
+<!--                        android:enabled="false"-->
+<!--                        android:id="@+id/gramtoYae"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:gravity="center"-->
+<!--                       style="@style/Forview"-->
+<!--                        android:background="@drawable/custom_edittext_form_background" />-->
+
+
+
+<!--                </LinearLayout>-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="ျပန္ေပး Gram"/>-->
+
+<!--                <EditText-->
+<!--                    android:enabled="false"-->
+<!--                   style="@style/Forview"-->
+<!--                    android:id="@+id/viewreturnGram"-->
+<!--                    android:background="@drawable/custom_edittext_form_background"-->
+<!--                    />-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="လက္က်န္ Gram"/>-->
+
+<!--                <EditText-->
+<!--                    android:enabled="false"-->
+<!--                   style="@style/Forview"-->
+<!--                    android:id="@+id/viewRemainGram"-->
+<!--                    android:background="@drawable/custom_edittext_form_background"-->
+<!--                    />-->
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:weightSum="15"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="က်ပ္"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="ပဲ"/>-->
+
+<!--                    <TextView-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="ေရြး"/>-->
+
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:weightSum="15"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/remainGramtoKyat"-->
+<!--                        style="@style/Forview"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:background="@drawable/custom_edittext_form_background"-->
+<!--                        android:enabled="false"-->
+<!--                        android:gravity="center" />-->
+
+<!--                    <EditText-->
+<!--                        android:enabled="false"-->
+<!--                        android:id="@+id/remainGramtoPal"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:gravity="center"-->
+<!--                       style="@style/Forview"-->
+<!--                        android:background="@drawable/custom_edittext_form_background"-->
+<!--                        />-->
+
+<!--                    <EditText-->
+<!--                        android:enabled="false"-->
+<!--                        android:id="@+id/remainGramtoYae"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:gravity="center"-->
+<!--                       style="@style/Forview"-->
+<!--                        android:background="@drawable/custom_edittext_form_background" />-->
+
+
+
+<!--                </LinearLayout>-->
+
+
+
+
+<!--                <TextView-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="ယခုဝယ္သည့္ ေရႊခ်ိန္ (100%)"/>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:weightSum="15"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="က်ပ္"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="ပဲ"/>-->
+
+<!--                    <TextView-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="ေရြး"/>-->
+
+<!--                </LinearLayout>-->
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:weightSum="15"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/buyKyat"-->
+<!--                        style="@style/Forview"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:background="@drawable/custom_edittext_form_background"-->
+<!--                        android:enabled="false"-->
+<!--                        android:gravity="center" />-->
+
+<!--                    <EditText-->
+<!--                        android:enabled="false"-->
+<!--                        android:id="@+id/buyPal"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:gravity="center"-->
+<!--                        style="@style/Forview"-->
+<!--                        android:background="@drawable/custom_edittext_form_background"-->
+<!--                        />-->
+
+<!--                    <EditText-->
+<!--                        android:enabled="false"-->
+<!--                        android:id="@+id/buyYae"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:gravity="center"-->
+<!--                        style="@style/Forview"-->
+<!--                        android:background="@drawable/custom_edittext_form_background" />-->
+
+
+
+<!--                </LinearLayout>-->
+
+
+
+
+<!--                <TextView-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="ယခင္လက္က်န္ အေျကြး"/>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:weightSum="15"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="က်ပ္"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="ပဲ"/>-->
+
+<!--                    <TextView-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="ေရြး"/>-->
+
+<!--                </LinearLayout>-->
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:weightSum="15"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/preRemainKyat"-->
+<!--                        style="@style/Forview"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:background="@drawable/custom_edittext_form_background"-->
+<!--                        android:enabled="false"-->
+<!--                        android:gravity="center" />-->
+
+<!--                    <EditText-->
+<!--                        android:enabled="false"-->
+<!--                        android:id="@+id/preRemainPal"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:gravity="center"-->
+<!--                        style="@style/Forview"-->
+<!--                        android:background="@drawable/custom_edittext_form_background"-->
+<!--                        />-->
+
+<!--                    <EditText-->
+<!--                        android:enabled="false"-->
+<!--                        android:id="@+id/preRemainYae"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:gravity="center"-->
+<!--                        style="@style/Forview"-->
+<!--                        android:background="@drawable/custom_edittext_form_background" />-->
+
+
+
+<!--                </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/recyclerViewEdit"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                <!--</android.support.v7.widget.RecyclerView>-->
+
+
+
+                <!--start edit save layout-->
+
+                <!--<LinearLayout-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/updateLayout"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Voucher Number"-->
+                    <!--android:textSize="18sp"-->
+                    <!--/>-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editVoucher"-->
+                    <!--android:background="@drawable/custom_edittext_form_background"-->
+                  <!--style="@style/Foredit" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Sale Date"-->
+                    <!--android:textSize="18sp"-->
+                    <!--/>-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editSaleDate"-->
+                    <!--android:background="@drawable/custom_edittext_form_background"-->
+                  <!--style="@style/Foredit" />-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Cupon Code"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editCuponCode"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Customer Name"-->
+                    <!--android:textSize="18sp"-->
+                    <!--/>-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editCustomerName"-->
+                    <!--android:background="@drawable/custom_edittext_form_background"-->
+                  <!--style="@style/Foredit" />-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Shop Name"-->
+                    <!--android:textSize="18sp"-->
+                    <!--/>-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editShopName"-->
+                    <!--android:background="@drawable/custom_edittext_form_background"-->
+                  <!--style="@style/Foredit" />-->
+
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Address"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editAddress"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                      <!--style="@style/Foredit" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Phone Number"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editPhoneNumber"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                      <!--style="@style/Foredit" />-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Date Of Birth"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editDOB"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                      <!--style="@style/Foredit" />-->
+
+
+
+
+
+
+                    <!--<TextView-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Township"-->
+                    <!--android:textSize="18sp"-->
+                    <!--/>-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editTownShip"-->
+                    <!--android:background="@drawable/custom_edittext_form_background"-->
+                  <!--style="@style/Foredit" />-->
+
+
+
+
+
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="အေလ်ာ့ က်ပ္"-->
+                    <!--android:textSize="18sp"-->
+                    <!--/>-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editRingDes"-->
+                    <!--android:background="@drawable/custom_edittext_form_background"-->
+                  <!--style="@style/Foredit" />-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="အေလ်ာ့ ပဲ"-->
+                    <!--android:textSize="18sp"-->
+                    <!--/>-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editRingNumber"-->
+                    <!--android:background="@drawable/custom_edittext_form_background"-->
+                  <!--style="@style/Foredit" />-->
+
+
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="အေလ်ာ့ ေရြး"-->
+                    <!--android:textSize="18sp"-->
+                    <!--/>-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editRingPointEight"-->
+                    <!--android:background="@drawable/custom_edittext_form_background"-->
+                  <!--style="@style/Foredit" />-->
+
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="စုစုေပါင္း အေလးခ်ိန္"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editRingKyat"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခုဝယ္သည့္ က်ပ္"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editRingPal"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခုဝယ္သည့္ ပဲ"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editRingYae"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခုဝယ္သည့္ ေရြး"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editBanglesDes"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခင္အေျကြး က်ပ္"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editBanglesNumber"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခင္အေျကြး ပဲ"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editBanglesPointEight"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခင္အေျကြး ေရြး"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editBanglesKyat"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="စုစုေပါင္း က်ပ္"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editBanglesPal"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="စုစုေပါင္း ပဲ"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editBanglesYae"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="စုစုေပါင္း ေရြး"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editNecklaceDes"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခုေပးေခ်မည့္ က်ပ္"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editNecklaceNumber"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခုေပးေခ်မည့္ ပဲ"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editNecklacePointEight"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခုေပးေခ်မည့္ ေရြး"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editNecklaceKyat"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခုလက္က်န္ က်ပ္"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editNecklacePal"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခုလက္က်န္ ပဲ"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editNecklaceYae"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="ယခုလက္က်န္ ေရြး"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editEarringDes"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Earring Number"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editEarringNumber"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Earring Point Eight"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editEarringPointEight"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Earring Kyat"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editEarringKyat"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Earring Pal"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editEarringPal"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Earring Yae"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editEarringYae"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Total Number"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editTotalNumber"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Total Point Eight"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editTotalPointEight"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Total Kyat"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editTotalKyat"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Total Pal"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editTotalPal"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Total Yae"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editTotalYae"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Total Gram"-->
+                        <!--android:textSize="18sp"-->
+                        <!--/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editTotalGram"-->
+                        <!--android:background="@drawable/custom_edittext_form_background"-->
+                       <!--style="@style/Foredit"/>-->
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btnUpdateSave"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:background="@drawable/button_login_back"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Save"/>-->
+
+
+
+
+
+                <!--</LinearLayout>-->
+                <!--&lt;!&ndash;&lt;!&ndash;end  edit save layout&ndash;&gt;&ndash;&gt;-->
+
+
+                <android.support.v4.widget.NestedScrollView
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <Button
+                            android:id="@+id/btnUpdateInVoiceSave"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:text="Save"
+                            android:textSize="18sp"
+                            android:textColor="#FFF"
+                            android:background="@drawable/button_login_back"/>
+
+
+                        <TextView
+                            style="@style/ForViewEdit"
+                            android:text="Voucher Number"/>
+
+                        <EditText
+                            style="@style/Foredit"
+                            android:id="@+id/voucherNumber"
+                            android:textAllCaps="false"
+                            android:background="@drawable/custom_edittext_form_background"/>
+
+
+                        <TextView
+                           style="@style/ForViewEdit"
+                            android:text="Sale Date"/>
+
+
+                        <EditText
+                            style="@style/Foredit"
+                            android:layout_weight="8"
+                            android:id="@+id/saleDate"
+                            android:focusable="false"
+                            android:hint="Date"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                            android:background="@drawable/custom_edittext_form_background"/>
+
+
+                        <TextView
+                            style="@style/ForViewEdit"
+                            android:text="Gram"/>
+
+                        <LinearLayout
+                            android:weightSum="10"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/gram"
+                                style="@style/Foredit"
+                                android:layout_height="52dp"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="Gram"
+                                android:inputType="numberDecimal" />
+
+                            <Button
+                                android:background="@drawable/button_login_back"
+                                style="@style/Foredit"
+                                android:id="@+id/Add"
+                                android:textColor="#FFF"
+                                android:layout_weight="5"
+                                android:text="Add"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="15"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/kyat"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="က်ပ္"
+                                android:inputType="numberDecimal" />
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/pal"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="ပဲ"
+                                android:inputType="numberDecimal"/>
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/yae"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint=" ေရြး"
+                                android:inputType="numberDecimal"
+                                />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ယခုဝယ္သည့္ ေရႊခ်ိန္ (100%)"/>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="15"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/totalkyat"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="က်ပ္"
+                                android:inputType="numberDecimal" />
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/totalpal"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="ပဲ"
+                                android:inputType="numberDecimal"/>
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/totalyae"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint=" ေရြး"
+                                android:inputType="numberDecimal"
+                                />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ယခင္လက္က်န္ အေျကြး"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="15"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:text="Voucher No"
+                                android:layout_weight="5"
+                                android:enabled="false"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:text="Sale Date"
+                                android:layout_weight="5"
+                                android:enabled="false"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:text="Sale Name"
+                                android:layout_weight="5"
+                                android:enabled="false"
+                                />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="15"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textColor="#A0A0A0"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:id="@+id/updatevoucher"
+                                android:layout_weight="5"
+                                />
+
+                            <TextView
+                                android:textColor="#A0A0A0"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:id="@+id/updateSaleDate"
+                                android:layout_weight="5"
+                                />
+
+                            <TextView
+                                android:textColor="#A0A0A0"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:id="@+id/updatSaleName"
+                                android:layout_weight="5"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="15"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/debitKyat"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="က်ပ္"
+                                android:inputType="numberDecimal" />
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/debitPal"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="ပဲ"
+                                android:inputType="numberDecimal"/>
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/debitYae"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint=" ေရြး"
+                                android:inputType="numberDecimal"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                        <Button
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/totalAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Calculate"
+                            android:background="@drawable/button_login_back"/>
+
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="စုစုေပါင္း ေရႊခ်ိန္ (100%)"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="15"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/buyDebitKyat"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="က်ပ္"
+                                android:inputType="numberDecimal"
+                                android:enabled="false"/>
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/buyDebitPal"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="ပဲ"
+                                android:inputType="numberDecimal"
+                                android:enabled="false"/>
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/buyDebitYae"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint=" ေရြး"
+                                android:inputType="numberDecimal"
+                                android:enabled="false"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ယခုေပးေခ်သည့္ ေရႊခ်ိန္ (100%)"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="15"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/paymentKyat"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="က်ပ္"
+                                android:inputType="numberDecimal" />
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/paymentPal"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="ပဲ"
+                                android:inputType="numberDecimal"/>
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/paymentYae"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint=" ေရြး"
+                                android:inputType="numberDecimal"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                        <Button
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/totalRemainAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Calculate"
+                            android:background="@drawable/button_login_back"/>
+
+
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ယခုလက္က်န္ ေရႊခ်ိန္ (100%)"/>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:weightSum="15"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:text="0"
+                                style="@style/Foredit"
+                                android:id="@+id/remainKyat"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="က်ပ္"
+                                android:inputType="numberDecimal"
+                                android:enabled="false"/>
+
+                            <EditText
+                                android:text="0"
+                                style="@style/Foredit"
+                                android:id="@+id/remainPal"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="ပဲ"
+                                android:inputType="numberDecimal"
+                                android:enabled="false"/>
+
+                            <EditText
+                                android:text="0"
+                                style="@style/Foredit"
+                                android:id="@+id/remainYae"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint=" ေရြး"
+                                android:inputType="numberDecimal"
+                                android:enabled="false"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_marginTop="8dp"
+                            android:weightSum="10"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                               android:layout_marginLeft="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Qualtity"
+
+                                />
+
+                            <TextView
+                               android:layout_marginLeft="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="Point Eight"/>
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="8dp"
+                            android:weightSum="10"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/custBuyNumber"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="Qualtity"
+                                android:inputType="numberDecimal"
+                                />
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/custDiscountPoint"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="Point Eight"
+                                android:inputType="numberDecimal"
+                                />
+
+
+
+
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="စုစုေပါင္း အေလ်ာ့"/>
+
+                        <LinearLayout
+                            android:weightSum="15"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/ayotKyat"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="က်ပ္"
+                                android:inputType="numberDecimal" />
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/ayotPal"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="ပဲ"
+                                android:inputType="numberDecimal" />
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/ayotYae"
+                                android:layout_weight="5"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:hint="ေရြး"
+                                android:inputType="numberDecimal"
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/cupon"
+                            android:background="@drawable/custom_edittext_form_background"
+                            android:hint="Cupon Code"
+                            android:layout_weight="5"
+                            style="@style/Foredit"/>
+
+
+
+                        <EditText
+                            android:id="@+id/note"
+                            android:background="@drawable/custom_edittext_form_background"
+                            android:hint="Remark"
+                            android:layout_weight="5"
+                            android:inputType="text"
+                            android:layout_height="120dp"
+                            style="@style/Foredit"/>
+
+
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <EditText
+                                android:id="@+id/shopName"
+                                style="@style/Foredit"
+                                android:hint="Shop Name"
+                                android:background="@drawable/custom_edittext_form_background"
+                                />
+
+
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/custName"
+                                android:hint="Customer Name"
+                                android:textAllCaps="false"
+                                android:background="@drawable/custom_edittext_form_background"/>
+
+
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/custPhone"
+                                android:textAllCaps="false"
+                                android:hint="Phone Number"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:inputType="phone"
+                                />
+
+
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/custDOB"
+                                android:textAllCaps="false"
+                                android:hint="Date Of Birth"
+                                android:background="@drawable/custom_edittext_form_background" />
+
+                            <EditText
+                                android:enabled="false"
+                                style="@style/Foredit"
+                                android:id="@+id/custNrc"
+                                android:textAllCaps="false"
+                                android:hint="NRC"
+                                android:background="@drawable/custom_edittext_form_background"/>
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/custId"
+                                android:textAllCaps="false"
+                                android:hint="Customer ID"
+                                android:enabled="false"
+                                android:background="@drawable/custom_edittext_form_background" />
+
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/custAddress"
+                                android:textAllCaps="false"
+                                android:hint="Address"
+                                android:background="@drawable/custom_edittext_form_background"
+                                />
+
+
+                            <EditText
+                                style="@style/Foredit"
+                                android:id="@+id/custTown"
+                                android:textAllCaps="false"
+                                android:hint="Town"
+                                android:background="@drawable/custom_edittext_form_background"
+                                android:padding="10dp"
+                                />
+
+
+                            <EditText
+                                android:enabled="false"
+                                style="@style/Foredit"
+                                android:id="@+id/custUserName"
+                                android:textAllCaps="false"
+                                android:hint="Customer UserName"
+                                android:background="@drawable/custom_edittext_form_background" />
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    </ScrollView>
+
+</RelativeLayout>
