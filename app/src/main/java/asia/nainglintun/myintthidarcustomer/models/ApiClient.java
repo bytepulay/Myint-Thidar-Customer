@@ -7,10 +7,6 @@ public class ApiClient {
 
     public static final String BASE_URL = "http://app.myinthidarjewellery.com/mtd/";
 
-   // public static final String BASE_URL = "http://data.myinthidarjewellery.com/storage/mtd/";
-
-
-
 
 
     private static Retrofit retrofit = null;
